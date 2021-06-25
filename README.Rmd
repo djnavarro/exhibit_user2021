@@ -1,0 +1,23 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# exhibit_user2021
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+```{r, results='asis'}
+pieces <- list.files(pattern = "(png|jpg)$")
+purrr::walk(pieces, ~ print(htmltools::img(src = .x, width = "45%")))
+```
+
