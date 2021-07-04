@@ -12,6 +12,7 @@ pieces <- list.files(pattern = "(png|jpg)$")
 purrr::walk(pieces, ~ print(htmltools::img(src = .x, width = "45%")))
 ```
 
+<img src="fire_and_ice.jpg" width="45%"/>
 <img src="floral_effect.png" width="45%"/>
 <img src="leviathan.png" width="45%"/>
 <img src="orchid_thorn.png" width="45%"/>
